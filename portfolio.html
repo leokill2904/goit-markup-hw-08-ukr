@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo header__logo" href="./index.html" lang="en"
+          >Web<span class="logo--dark">Studio</span></a
+        >
+        <button type="button" class="mobile-menu-button" data-menu-open>
+          <svg class="mobile-menu-button__icon" width="40" height="40">
+            <use href="./images/sprite.svg#mobile-menu-icon"></use>
+          </svg>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/sprite.svg#smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu-button" data-menu-close>
+            <svg
+              class="mobile-menu-button__icon mobile-menu-button__icon--close"
+              width="40"
+              height="40"
+            >
+              <use href="./images/sprite.svg#mobile-menu-close-icon"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav__list">
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a
+                  class="mobile-menu-nav__link mobile-menu-nav__link--active"
+                  href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-menu-nav__item">
+                <a class="mobile-menu-nav__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="mobile-menu__wrapper">
+            <ul class="mobile-menu-contacts">
+              <li class="mobile-menu-contacts__item">
+                <a
+                  class="mobile-menu-contacts__link mobile-menu-contacts__link--phone"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mobile-menu-contacts__item">
+                <a
+                  class="mobile-menu-contacts__link mobile-menu-contacts__link--mail"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <div class="mobile-menu__socials">
+              <ul class="mobile-menu-socials__list">
+                <li class="mobile-menu-socials__item">
+                  <a class="mobile-menu-socials__link" href="">Instagram</a>
+                </li>
+                <li class="mobile-menu-socials__item">
+                  <a class="mobile-menu-socials__link" href="">Twitter</a>
+                </li>
+                <li class="mobile-menu-socials__item">
+                  <a class="mobile-menu-socials__link" href="">Facebook</a>
+                </li>
+                <li class="mobile-menu-socials__item">
+                  <a class="mobile-menu-socials__link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Приклади робіт</h1>
+          <div class="filter">
+            <ul class="filter__list">
+              <li class="filter__item">
+                <button class="radio-button" type="button">Всі</button>
+              </li>
+              <li class="filter__item">
+                <button class="radio-button" type="button">Веб-сайти</button>
+              </li>
+              <li class="filter__item">
+                <button class="radio-button" type="button">Додатки</button>
+              </li>
+              <li class="filter__item">
+                <button class="radio-button" type="button">Дизайн</button>
+              </li>
+              <li class="filter__item">
+                <button class="radio-button" type="button">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="work-examples">
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-1.webp    1x,
+                        ./images/work-examples/img-example-desktop-1@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-1.jpg    1x,
+                        ./images/work-examples/img-example-desktop-1@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-1.webp    1x,
+                        ./images/work-examples/img-example-tablet-1@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-1.jpg    1x,
+                        ./images/work-examples/img-example-tablet-1@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-1.webp    1x,
+                        ./images/work-examples/img-example-1@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-1.jpg    1x,
+                        ./images/work-examples/img-example-1@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./images/work-examples/img-example-1.jpg" alt="веб-сайт Технокряк" />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title">Технокряк</h2>
+                  <p class="work-examples__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-2.webp    1x,
+                        ./images/work-examples/img-example-desktop-2@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-2.jpg    1x,
+                        ./images/work-examples/img-example-desktop-2@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-2.webp    1x,
+                        ./images/work-examples/img-example-tablet-2@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-2.jpg    1x,
+                        ./images/work-examples/img-example-tablet-2@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-2.webp    1x,
+                        ./images/work-examples/img-example-2@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-2.jpg    1x,
+                        ./images/work-examples/img-example-2@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-2.jpg"
+                      alt="дизайн постера Нью Орлеан против Голден Стар"
+                    />
+                  </picture>
+                  <p class="overlay">
+
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="work-examples__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-3.webp    1x,
+                        ./images/work-examples/img-example-desktop-3@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-3.jpg    1x,
+                        ./images/work-examples/img-example-desktop-3@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-3.webp    1x,
+                        ./images/work-examples/img-example-tablet-3@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-3.jpg    1x,
+                        ./images/work-examples/img-example-tablet-3@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-3.webp    1x,
+                        ./images/work-examples/img-example-3@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-3.jpg    1x,
+                        ./images/work-examples/img-example-3@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-3.jpg"
+                      alt="приложение ресторана Сиафуд"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="work-examples__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-4.webp    1x,
+                        ./images/work-examples/img-example-desktop-4@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-4.jpg    1x,
+                        ./images/work-examples/img-example-desktop-4@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-4.webp    1x,
+                        ./images/work-examples/img-example-tablet-4@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-4.jpg    1x,
+                        ./images/work-examples/img-example-tablet-4@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-4.webp    1x,
+                        ./images/work-examples/img-example-4@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-4.jpg    1x,
+                        ./images/work-examples/img-example-4@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-4.jpg"
+                      alt="маркетинг проект Прайм"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title">Проект <span lang="en">Prime</span></h2>
+                  <p class="work-examples__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-5.webp    1x,
+                        ./images/work-examples/img-example-desktop-5@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-5.jpg    1x,
+                        ./images/work-examples/img-example-desktop-5@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-5.webp    1x,
+                        ./images/work-examples/img-example-tablet-5@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-5.jpg    1x,
+                        ./images/work-examples/img-example-tablet-5@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-5.webp    1x,
+                        ./images/work-examples/img-example-5@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-5.jpg    1x,
+                        ./images/work-examples/img-example-5@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-5.jpg"
+                      alt="приложение проект Боксес"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="work-examples__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-6.webp    1x,
+                        ./images/work-examples/img-example-desktop-6@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-6.jpg    1x,
+                        ./images/work-examples/img-example-desktop-6@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-6.webp    1x,
+                        ./images/work-examples/img-example-tablet-6@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-6.jpg    1x,
+                        ./images/work-examples/img-example-tablet-6@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-6.webp    1x,
+                        ./images/work-examples/img-example-6@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-6.jpg    1x,
+                        ./images/work-examples/img-example-6@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-6.jpg"
+                      alt="веб-сайт Инспирейшн хез но бордерс"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="work-examples__description">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-7.webp    1x,
+                        ./images/work-examples/img-example-desktop-7@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-7.jpg    1x,
+                        ./images/work-examples/img-example-desktop-7@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-7.webp    1x,
+                        ./images/work-examples/img-example-tablet-7@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-7.jpg    1x,
+                        ./images/work-examples/img-example-tablet-7@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-7.webp    1x,
+                        ./images/work-examples/img-example-7@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-7.jpg    1x,
+                        ./images/work-examples/img-example-7@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-7.jpg"
+                      alt="дизайн издания Лимитед Эдишн"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title">
+                    Издание <span lang="en">Limited Edition</span>
+                  </h2>
+                  <p class="work-examples__description">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href="">
+                <div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-8.webp    1x,
+                        ./images/work-examples/img-example-desktop-8@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-8.jpg    1x,
+                        ./images/work-examples/img-example-desktop-8@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-8.webp    1x,
+                        ./images/work-examples/img-example-tablet-8@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-8.jpg    1x,
+                        ./images/work-examples/img-example-tablet-8@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-8.webp    1x,
+                        ./images/work-examples/img-example-8@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-8.jpg    1x,
+                        ./images/work-examples/img-example-8@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-8.jpg"
+                      alt="маркетинг проект ЛАБ"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title">Проект <span lang="en">LAB</span></h2>
+                  <p class="work-examples__description">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="work-examples__item">
+              <a class="work-examples__link" href=""
+                ><div class="work-examples__wrapper">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-9.webp    1x,
+                        ./images/work-examples/img-example-desktop-9@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-desktop-9.jpg    1x,
+                        ./images/work-examples/img-example-desktop-9@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-9.webp    1x,
+                        ./images/work-examples/img-example-tablet-9@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-tablet-9.jpg    1x,
+                        ./images/work-examples/img-example-tablet-9@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-9.webp    1x,
+                        ./images/work-examples/img-example-9@2x.webp 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/work-examples/img-example-9.jpg    1x,
+                        ./images/work-examples/img-example-9@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./images/work-examples/img-example-9.jpg"
+                      alt="приложение Гроуинг Бизнесс"
+                    />
+                  </picture>
+                  <p class="overlay">
+                    Технокряк це сучасний майданчик поширення коронавірусу. Компанії використовують цю платформу для цифрового шпигунства та атак на захищені сервери конкурентів.
+                  </p>
+                </div>
+                <div class="work-examples__card">
+                  <h2 class="work-examples__title" lang="en">Growing Business</h2>
+                  <p class="work-examples__description">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper--left-side">
+          <div class="footer-contacts">
+            <a class="logo footer__logo" href="./index.html" lang="en"
+              >Web<span class="logo--light">Studio</span></a
+            >
+            <address class="footer-contacts__address">
+              <ul class="footer-contacts__list">
+                <li class="footer-contacts__item">
+                  <a
+                    class="footer-contacts__link footer-contacts__link--other-color"
+                    href="https://goo.gl/maps/cRMagZyy7CcEZu3e9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a class="footer-contacts__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__wrapper--center">
+            <b class="footer__text">Приєднуйтесь</b>
+            <ul class="socials footer-socials">
+              <li class="footer-socials--right">
+                <a class="socials__link footer-socials__link" aria-label="instagram" href="">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials--right">
+                <a class="socials__link footer-socials__link" aria-label="twitter" href="">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials--right">
+                <a class="socials__link footer-socials__link" aria-label="facebook" href="">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-socials--right">
+                <a class="socials__link footer-socials__link" aria-label="linkedin" href="">
+                  <svg class="socials__icon" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__wrapper--right-side">
+          <b class="footer__text">Підпишіться на розсилку</b>
+          <form name="contact-form" method="post" class="contact-form">
+            <input type="email" name="email" class="contact-form__input" placeholder="E-mail" />
+            <button type="submit" class="button submit-button">
+              <span>Підписатись</span>
+              <svg class="submit-button__icon--left" width="24" height="24">
+                <use href="./images/sprite.svg#send-icon"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
